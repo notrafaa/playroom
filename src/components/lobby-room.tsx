@@ -3,7 +3,7 @@
 import { Check, Copy, Crown, Headphones, LogOut, UserRoundX } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { canStartMatch, isBotOnline, type PlayerState } from "@playroom/shared";
+import { canStartMatch, isBotOnline, type PlayerState } from "@/lib/shared";
 import { isDemoMode } from "@/lib/env";
 import { createClient } from "@/lib/supabase/client";
 

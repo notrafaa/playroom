@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { brand } from "@playroom/shared";
+import { brand } from "@/lib/shared";
 import { Header } from "@/components/header";
 import { SoundProvider } from "@/components/sound-provider";
 import "./globals.css";

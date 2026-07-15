@@ -2,7 +2,7 @@
   "name": "@playroom/web",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@10.29.3",
+  "packageManager": "npm@10.9.4",
   "engines": { "node": "22.x" },
   "scripts": {
     "dev": "next dev",
@@ -14,7 +14,6 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
-    "@playroom/shared": "workspace:*",
     "@supabase/ssr": "0.12.3",
     "@supabase/supabase-js": "2.110.6",
     "lucide-react": "0.468.0",

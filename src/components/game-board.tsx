@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { CheckCircle2, Clock3, Heart, LogOut, RefreshCw, ShieldAlert, Volume2, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { gainScore, loseLife, replaceMission, type PlayerState } from "@playroom/shared";
+import { gainScore, loseLife, replaceMission, type PlayerState } from "@/lib/shared";
 import { isDemoMode } from "@/lib/env";
 import { createClient } from "@/lib/supabase/client";
 import { useSound } from "./sound-provider";

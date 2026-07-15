@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Gamepad2 } from "lucide-react";
-import { brand } from "@playroom/shared";
+import { brand } from "@/lib/shared";
 import { AuthButton } from "./auth-button";
 import { SoundToggle } from "./sound-provider";
 import { isDemoMode } from "@/lib/env";

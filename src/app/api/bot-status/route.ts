@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { isBotOnline } from "@playroom/shared";
+import { isBotOnline } from "@/lib/shared";
 import { hasSupabaseConfig, isDemoMode } from "@/lib/env";
 import { createClient } from "@/lib/supabase/server";
 

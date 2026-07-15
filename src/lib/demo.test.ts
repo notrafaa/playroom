@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { reconnectStatus, resolveVotes } from "@playroom/shared";
+import { reconnectStatus, resolveVotes } from "./shared";
 
 describe("règles de reprise", () => {
   it("une égalité devient trop vague", () => expect(resolveVotes(["correct", "incorrect"])).toBe("too_vague"));
