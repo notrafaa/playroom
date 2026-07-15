@@ -1,0 +1,2 @@
+import { UserRound } from "lucide-react";
+export default function ProfilePage() { return <main className="shell"><header className="page-head"><p className="eyebrow">Ton compte</p><h1>Profil Discord</h1></header><section className="panel panel-pad profile-card"><span className="avatar avatar-1"><UserRound /></span><div><h2>Mina</h2><p>Mode démonstration · connecte Discord en production pour afficher ton vrai profil.</p></div></section></main>; }

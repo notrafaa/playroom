@@ -1,0 +1,2 @@
+import { JoinForm } from "@/components/join-form";
+export default async function JoinPage({ params }: { params: Promise<{ code: string }> }) { const { code } = await params; return <main className="shell"><header className="page-head"><p className="eyebrow">Invitation reçue</p><h1>La partie t’attend.</h1></header><section className="panel panel-pad" style={{ maxWidth: 620 }}><JoinForm initialCode={code.toUpperCase()} /></section></main>; }
