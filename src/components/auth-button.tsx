@@ -2,7 +2,7 @@
 
 import { LogIn } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
-import { hasSupabaseConfig, isDemoMode, publicEnv } from "@/lib/env";
+import { hasSupabaseConfig, isDemoMode } from "@/lib/env";
 
 export function AuthButton() {
   async function signIn() {
@@ -10,7 +10,10 @@ export function AuthButton() {
     const supabase = createClient();
     await supabase.auth.signInWithOAuth({
       provider: "discord",
-      options: { redirectTo: `${publicEnv.NEXT_PUBLIC_SITE_URL}/auth/callback`, scopes: "identify guilds" }
+      options: {
+        redirectTo: new URL("/auth/callback", window.location.origin).toString(),
+        scopes: "identify guilds"
+      }
     });
   }
   if (isDemoMode) return <span className="button button-discord">Mina · Démo</span>;
